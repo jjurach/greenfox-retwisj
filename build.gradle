@@ -15,7 +15,7 @@ apply plugin: "java"
 apply plugin: 'eclipse'
 apply plugin: 'eclipse-wtp'
 apply plugin: 'idea'
-apply plugin: 'docbook-reference'
+//apply plugin: 'docbook-reference'
 apply plugin: 'war'	
 
 group = 'net.sl8.greenfox'
@@ -63,8 +63,8 @@ war {
   archiveName = baseName + "." + extension
 }
 
-reference {
-    sourceDir = file('docs/src/reference/docbook')
-}
+//reference {
+//    sourceDir = file('docs/src/reference/docbook')
+//}
     
 defaultTasks 'build'
